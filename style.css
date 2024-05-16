@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 40px;
+}
+canvas{
+    border: 1px solid black;
+    max-width: 600px;
+    max-height: 500px;
+}
+div{
+    margin: 20px 0;
+}
+h1,h2,h3{
+    padding: 20px 0;
+}
+input[type="file"]
+{
+    padding-top: 20px;
+}
