@@ -32,7 +32,19 @@ function red()
     uploadimgcheck();
     for( var pixel of image.values())
         {
-            pixel.setRed(255);
+            var avg = (pixel.getRed()+pixel.getGreen()+pixel.getBlue())/3;
+            if(avg<128)
+                {
+                    pixel.setRed(2*avg);
+                    pixel.setGreen(0);
+                    pixel.setBlue(0);
+                }
+            else
+            {
+                pixel.setRed(255);
+                pixel.setGreen((2*avg)-255);
+                pixel.setBlue((2*avg)-255);
+            }
         }
     image.drawTo(canvas)
 }
@@ -86,4 +98,8 @@ function reset()
 {
     uploadimgcheck();
     upload();
+}
+function blur()
+{
+    
 }
