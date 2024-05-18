@@ -3,23 +3,100 @@
     margin: 0;
     box-sizing: border-box;
 }
+.poetsen-one-regular {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
 body{
     font-size: 18px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 40px;
-}
-canvas{
-    border: 1px solid black;
-    max-width: 600px;
-    max-height: 500px;
+    padding: 20px;
+    background-color: #F8F0FB ;
+    font-family: sans-serif;
 }
 div{
     margin: 20px 0;
 }
-h1,h2,h3{
-    padding: 20px 0;
+h1{
+    text-align: center;
+    font-size: 3rem;
+    color:#6320EE;
+    padding-bottom: 1rem;
 }
-input[type="file"]
-{
-    padding-top: 20px;
+.div-1{
+    max-width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.div-1 input,canvas,h2{
+    display: block;
+    padding: 2rem 0;
+}
+.div-1 canvas{
+    border: 2px solid #211A1D;
+    border-radius: 1rem;
+    max-width: 80%;
+    min-width: 60%;    
+    max-height: 600px;
+    object-fit: contain;
+}
+.div-1 h2{
+    color: #211A1D;
+    text-transform: capitalize;
+}
+.div-1 input{
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #6320EE;
+    color: white;
+    border-radius: 5px;
+    margin-top: 2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.div-1 input:hover{
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+.div-1 input:active{
+    background-color: #3e8e41;
+    transform: translateY(0);
+}
+.div-2{
+    display: flex;
+    max-width: 50vw;
+    margin: 0 auto;
+    align-items: center;
+    padding: 3rem 0;
+    flex-direction: column;
+}
+.div-2 h3{
+    padding-bottom: 0.5rem;
+}
+
+.styled-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #6320EE;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 0.5rem 5px;
+}
+
+.styled-button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+.styled-button:active {
+    background-color: #3e8e41;
+    transform: translateY(0);
 }

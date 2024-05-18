@@ -5,22 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apply filters to you Images</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
-    <h1>Apply Filters To your Images</h1>
-    <div>
+    <h1 class="poetsen-one-regular">Apply filters to your images</h1>
+    <div class="div-1">
         <h2>Upload Your image</h2>
         <canvas id="upload-canvas"></canvas>
         <input type="file" id="file-upload" onchange="upload()" accept="image/*" multiple="false">
     </div>
-    <div>
-        <h3>Choose Filters</h3>
-        <input type="button" value="GrayScale" onclick="grayscale()" id="grayscale-btn">
-        <input type="button" value="Red" onclick="red()" id="red-btn">
-        <input type="button" value="Rainbow" onclick="rainbow()" id="rainbow-btn">
-        <input type="button" value="Reset" onclick="reset()" id="reset-btn">
-       </div>
+    <div class="div-2">
+        <span>
+            <h3>Choose Filters</h3>
+        </span>
+        <span>
+            <input type="button" value="GrayScale" onclick="grayscale()" class="styled-button" id="grayscale-btn">
+            <input type="button" value="Red" onclick="red()" class="styled-button" id="red-btn">
+            <input type="button" value="Rainbow" onclick="rainbow()" class="styled-button" id="rainbow-btn">
+            <input type="button" value="Reset" onclick="reset()" class="styled-button" id="reset-btn">
+        </span>
+      
+    </div>
     
     <script src="code.js"></script>
 </body>
